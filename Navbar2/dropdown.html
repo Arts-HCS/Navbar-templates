@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dropdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a class="logo" href="">LOGO</a>
+            <input type="checkbox" id="sidebar-active">
+            <label for="sidebar-active" class="open-sidebar-button">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+
+            <label id="overlay" for="sidebar-active"></label>
+            <ul class="nav">
+                <label for="sidebar-active" class="close-sidebar-button">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <li><a href="">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="">Productos <i class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="#">Producto 1</a>
+                        <a href="#">Producto 2</a>
+                        <a href="#">Producto 3</a>
+                    </div>
+                </li>
+                <a href="">Nuestra misión</a>
+                <div class="right-links">
+                    <a href="">Log In</a>
+                    <a class="orange-btn" href="">Contact</a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
